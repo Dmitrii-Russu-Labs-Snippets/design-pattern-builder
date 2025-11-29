@@ -27,7 +27,7 @@ PersonClassicBuilder person = PersonClassicBuilder.builder().name("John").age(25
 
 ### 2. Fluent Builder (PersonFluentBuilder)
 
-**Staged builder with mandatory field initialization
+**Staged builder with mandatory field initialization**
 
 ```java
 PersonFluentBuilder person = PersonFluentBuilder.name("John").age(25).build();
@@ -45,7 +45,7 @@ PersonFluentBuilder person = PersonFluentBuilder.name("John").age(25).build();
 
 ### 3. Buildless Builder (PersonBuildlessBuilder)
 
-**Builder without terminal build() method
+**Builder without terminal build() method**
 
 ``` java
 PersonBuildlessBuilder person = PersonBuildlessBuilder.name("John").age(25);
@@ -60,22 +60,6 @@ PersonBuildlessBuilder person = PersonBuildlessBuilder.name("John").age(25);
 ✅ All fields are mandatory
 
 ✅ Most concise syntax
-
-📁 Project Structure
-
-src/main/java/com/patterns/builder/
-├── classic/
-│   └── PersonClassicBuilder.java
-├── fluent/
-│   └── PersonFluentBuilder.java
-├── buildless/
-│   └── PersonBuildlessBuilder.java
-└── Main.java
-
-src/test/java/com/patterns/builder/
-├── PersonClassicBuilderTest.java
-├── PersonFluentBuilderTest.java
-└── PersonBuildlessBuilderTest.java
 
 ### Use Cases
 
